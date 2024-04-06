@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.travelContainer {
+    display: flex;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchContainer {
+    position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formContainer {
+    display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchContainer input {
+    box-sizing: border-box;
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    outline: none;
 }
-
-.App-link {
-  color: #61dafb;
+.currentLocationName {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.currentLocationBtnContainer {
+    display: flex;
+    justify-content: space-around;
+}
+.itemListContainer {
+    background-color: white;
+    position: absolute;
+    width: 600px;
+    max-height: calc(100vh - 51px);
+    overflow-y: scroll;
+    top: 100%;
+    left: 0%;
+    z-index: 100;
+}
+.list {
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+.list:hover {
+    background-color: black;
+    color: white;
+}
+.placeName {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.addressName {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+.searchResultContainer {
+    width: 600px;
+    max-height: calc(100vh - 51px);
+    overflow-y: scroll;
+}
+.iwContainer {
+    display: grid;
+    grid-template-columns: 150px 300px;
+    border-radius: 5px;
+    margin: 5px;
+    row-gap: 20px;
+    padding: 5px;
+    width: 450px;
+    /* height: 100px; */
 }
